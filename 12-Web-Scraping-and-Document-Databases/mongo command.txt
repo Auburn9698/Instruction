@@ -1,0 +1,6 @@
+Start the server: mongod
+
+Use mongo in a separate terminal: mongo
+
+Connection string for MongoDB Compass: mongodb://localhost:27017
+

@@ -1,0 +1,9 @@
+Chrome Driver from class video:
+In Activities 09 Solved scrape_craigslist.py:
+
+Include this in the dependencies:
+from webdriver_manager.chrome import ChromeDriverManager
+
+Change the executable path to this:
+( first, just comment out the "/usr/local/bin/chromedriver" part, to save it for later )
+executable_path = {"executable_path": ChromeDriverManager().install()}
