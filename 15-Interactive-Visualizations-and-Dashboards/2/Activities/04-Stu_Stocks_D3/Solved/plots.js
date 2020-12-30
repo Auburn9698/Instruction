@@ -22,6 +22,9 @@ function unpack(rows, index) {
   });
 }
 
+// Class note: Tome looked at the data with this command:
+// d3.json(url).then(function(data) {console.log(data)})
+
 function buildPlot() {
   d3.json(url).then(function(data) {
 
