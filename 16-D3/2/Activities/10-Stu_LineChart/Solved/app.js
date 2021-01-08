@@ -52,6 +52,9 @@ d3.csv("miles-walked-this-month.csv").then(function(milesData) {
     .range([chartHeight, 0])
     .domain([0, d3.max(milesData, data => data.miles)]);
 
+    // Class note: Using scaleLinear for both here because it's a bar chart.
+    // scaleBand would be used more for a bar chart.
+
   // Create two new functions passing the scales in as arguments
   // These will be used to create the chart's axes
   var bottomAxis = d3.axisBottom(xTimeScale);
@@ -79,7 +82,7 @@ d3.csv("miles-walked-this-month.csv").then(function(milesData) {
   chartGroup.append("g")
     .classed("axis", true)
     .attr("transform", "translate(0, " + chartHeight + ")")
-    .call(bottomAxis);
+    .call(bottomAxis);   // .each happens for every item in the array / .call happens one time for the selector.
 }).catch(function(error) {
   console.log(error);
 });

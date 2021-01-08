@@ -66,7 +66,9 @@ d3.csv("hairData.csv").then(function(hairData) {
     .attr("fill", "pink")
     .attr("opacity", ".5");
 
-    // Step 6: Initialize tool tip
+    // Step 6: Initialize tool tip  
+    // (To use the .tip shortcut, you have to import the tooltip script in the html.)
+    //https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js
     // ==============================
     var toolTip = d3.tip()
       .attr("class", "tooltip")

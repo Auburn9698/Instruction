@@ -4,6 +4,7 @@ var dataArr = [10, 20, 2000];
 console.log("min value ", d3.min(dataArr));
 console.log("max value ", d3.max(dataArr));
 console.log("min and max values ", d3.extent(dataArr));
+  //extent is like min and max together
 
 // Part 2: scaleLinear
 // Imagine you have test scores with possible scores from 0 to 100,
@@ -15,7 +16,7 @@ var testScores = [50, 90, 95, 75, 85];
 
 var yScale = d3.scaleLinear()
     .domain([0, 100])
-    .range([0, 1000]);
+    .range([0, 1000]); //( svg height in pixels)
 
 console.log(`50 returns ${yScale(50)}`);
 console.log(`75 returns ${yScale(75)}`);
@@ -25,7 +26,7 @@ console.log(`100 returns ${yScale(100)}`);
 var svgHeight = 1000;
 
 var yScale = d3.scaleLinear()
-  .domain([0, d3.max(testScores)])
+  .domain([0, d3.max(testScores)])  // (  .domain([0, 95])   )
   .range([0, svgHeight]);
 
 
@@ -36,8 +37,8 @@ console.log(`95 returns ${yScale(95)}`);
 
 // c. extent
 var yScale = d3.scaleLinear()
-  .domain(d3.extent(testScores))
-  .range([0, svgHeight]);
+  .domain(d3.extent(testScores))  //  (  .domain([50, 95])  )
+  .range([0, svgHeight]);         // (   .range([0, 1000])   )
 
 
 console.log(`50 returns ${yScale(50)}`);
@@ -46,17 +47,17 @@ console.log(`95 returns ${yScale(95)}`);
 
 // Part 3: scaleBand
 // Imagine you want to visualize student grade information on a bar chart.
-svgHeight = 600;
+var svgHeight = 600;
 var svgWidth = 1000;
 
 testScores = [90, 85, 75, 90];
 var students = ["Han", "Sarah", "Matt", "Ruchi"];
 
-var xScale = d3.scaleBand()
+var xScale = d3.scaleBand()  // scaleBand is for categorical data
   .domain(students)
   .range([0, svgWidth]);
 
-console.log(`Han's x-coordinate: ${xScale("Han")}`);
+console.log(`Han's x-coordinate: ${xScale("Han")}`);         // These 4 lines just do the same thing 2 different ways.
 console.log(`Sarah's x-coordinate: ${xScale(students[1])}`);
 console.log(`Matt's x-coordinate: ${xScale("Matt")}`);
 console.log(`Ruchi's x-coordinate: ${xScale(students[3])}`);
