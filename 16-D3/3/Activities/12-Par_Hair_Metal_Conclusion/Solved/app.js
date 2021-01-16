@@ -50,6 +50,18 @@ function renderAxes(newXScale, xAxis) {
   return xAxis;
 }
 
+// function used for updating xAxis var upon click on axis label
+function renderAxes(newXScale, xAxis) {
+  var bottomAxis = d3.axisBottom(newXScale);
+
+  xAxis.transition()
+    .duration(1000)
+    .call(bottomAxis);
+
+  return xAxis;
+}
+
+
 // function used for updating circles group with a transition to
 // new circles
 function renderCircles(circlesGroup, newXScale, chosenXAxis) {
@@ -191,6 +203,7 @@ d3.csv("hairData.csv").then(function(hairData, err) {
 
         // updates tooltips with new info
         circlesGroup = updateToolTip(chosenXAxis, circlesGroup);
+        
 
         // changes classes to change bold text
         if (chosenXAxis === "num_albums") {
