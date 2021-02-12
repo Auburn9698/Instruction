@@ -4,7 +4,7 @@ var svgHeight = 600;
 var margin = {
   top: 20,
   right: 40,
-  bottom: 80,
+  bottom: 110,
   left: 100
 };
 
@@ -68,8 +68,15 @@ function updateToolTip(chosenXAxis, circlesGroup) {
   var label;
 
   if (chosenXAxis === "value") {
-    label = "Value(Euros):";
+    label = "Value (Euros):";
   }
+  else if (chosenXAxis === "inches") {
+    label = "Height (Inches)"
+  }
+  else if (chosenXAxis === "weight") {
+    label = "Weight (Lbs)"
+  }
+
   else {
     label = "Body Mass Index";
   }
@@ -78,7 +85,7 @@ function updateToolTip(chosenXAxis, circlesGroup) {
     .attr("class", "tooltip")
     .offset([90, -70])
     .html(function(d) {
-      return (`${d.name}<br>${label} ${d[chosenXAxis]}<br>Overall: ${d.overall}`);
+      return (`${d.name}<br>${label} ${d[chosenXAxis]}<br>Rating: ${d.overall}`);
     });
 
   circlesGroup.call(toolTip);
@@ -98,12 +105,14 @@ function updateToolTip(chosenXAxis, circlesGroup) {
 d3.csv("fifa21.csv").then(function(fifaData, err) {
   if (err) throw err;
 
+  console.log(fifaData)
   // parse data
   fifaData.forEach(function(data) {
     data.value = +data.value;
     data.bmi = +data.bmi;
     data.overall = +data.overall;
-    data.height = +data.height;
+    data.inches = +data.inches;
+    data.weight = +data.weight;
   });
 
   // xLinearScale function above csv import
@@ -139,7 +148,7 @@ d3.csv("fifa21.csv").then(function(fifaData, err) {
     .attr("fill", "orange")
     .attr("opacity", ".5");
 
-  // Create group for two x-axis labels
+  // Create group for multiple x-axis labels
   var labelsGroup = chartGroup.append("g")
     .attr("transform", `translate(${width / 2}, ${height + 20})`);
 
@@ -147,12 +156,26 @@ d3.csv("fifa21.csv").then(function(fifaData, err) {
     .attr("x", 0)
     .attr("y", 20)
     .attr("value", "value") // value to grab for event listener
-    .classed("active", true)
+    .classed("active", true)  // default x-axes
     .text("Value in Euros");
+
+    var inchesLabel = labelsGroup.append("text")
+    .attr("x", 0)
+    .attr("y", 40)
+    .attr("value", "inches") // value to grab for event listener
+    .classed("inactive", true)
+    .text("Height (Inches)");
+
+    var weightLabel = labelsGroup.append("text")
+    .attr("x", 0)
+    .attr("y", 60)
+    .attr("value", "weight") // value to grab for event listener
+    .classed("inactive", true)
+    .text("Weight (Lbs");
 
   var bmiLabel = labelsGroup.append("text")
     .attr("x", 0)
-    .attr("y", 40)
+    .attr("y", 80)
     .attr("value", "bmi") // value to grab for event listener
     .classed("inactive", true)
     .text("Body Mass Index");
@@ -160,7 +183,7 @@ d3.csv("fifa21.csv").then(function(fifaData, err) {
   // append y axis
   chartGroup.append("text")
     .attr("transform", "rotate(-90)")
-    .attr("y", 0 - margin.left)
+    .attr("y", 30 - margin.left)
     .attr("x", 0 - (height / 2))
     .attr("dy", "1em")
     .classed("axis-text", true)
@@ -203,15 +226,58 @@ d3.csv("fifa21.csv").then(function(fifaData, err) {
             valueEurosLabel
             .classed("active", false)
             .classed("inactive", true);
+            inchesLabel
+            .classed("active", false)
+            .classed("inactive", true);
+            weightLabel
+            .classed("active", false)
+            .classed("inactive", true);         
         }
-        else {
-          bmiLabel
+
+        else if (chosenXAxis === "inches") {
+          inchesLabel
+            .classed("active", true)
+            .classed("inactive", false);
+            valueEurosLabel
+            .classed("active", false)
+            .classed("inactive", true);
+            bmiLabel
+            .classed("active", false)
+            .classed("inactive", true)
+            weightLabel
+            .classed("active", false)
+            .classed("inactive", true)
+        }
+
+        else if (chosenXAxis === "weight") {
+          weightLabel
+            .classed("active", true)
+            .classed("inactive", false)          
+            bmiLabel
             .classed("active", false)
             .classed("inactive", true);
             valueEurosLabel
-            .classed("active", true)
-            .classed("inactive", false);
+            .classed("active", false)
+            .classed("inactive", true);
+            inchesLabel
+            .classed("active", false)
+            .classed("inactive", true);       
         }
+
+        else {
+          valueEurosLabel
+            .classed("active", true)
+            .classed("inactive", false);          
+            bmiLabel
+            .classed("active", false)
+            .classed("inactive", true);
+            inchesLabel
+            .classed("active", false)
+            .classed("inactive", true);
+            weightLabel
+            .classed("active", false)
+            .classed("inactive", true);          
+          }
       }
     });
 }).catch(function(error) {

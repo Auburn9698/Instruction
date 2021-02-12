@@ -1,0 +1,9 @@
+$ pip install graphviz
+Collecting graphviz
+  Downloading graphviz-0.16-py2.py3-none-any.whl (19 kB)
+Installing collected packages: graphviz
+Successfully installed graphviz-0.16
+
+I installed first the file for windows:
+https://graphviz.org/download/
+Then I used terminal for the installation (pip)

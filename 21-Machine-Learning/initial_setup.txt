@@ -1,0 +1,15 @@
+Make sure that you’ve pulled the most recent version of the class repository as I’ve posted the new section and you’ll need it to do the steps below.
+Please try to start the process of installing the new virtual environment called PyAdv.
+STEPS:
+cd down into the resources directory that I’ve pointed out in the attached screenshot (your full path will be slightly different)
+Make sure you don’t have any environment activated (I had to do a bunch of conda deactivate (or possibly source deactivate on Windows) commands but you should only have to do one or two)
+Run the following command conda env create --file python_adv.yml
+
+Message at the end:
+To activate this environment, use
+#
+#     $ conda activate PythonAdv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
