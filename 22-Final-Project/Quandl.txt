@@ -1,0 +1,18 @@
+DUin8WZJsA4zAdwVJPg7
+
+
+Some others that might work with an ML component and mapping:
+
+Aircraft Wildlife strikes:
+https://www.kaggle.com/faa/wildlife-strikes
+
+Police shootings:
+https://www.kaggle.com/mrmorj/data-police-shootings
+
+NYC schools by SAT scores:
+https://www.kaggle.com/nycopendata/high-schools
+
+NFL betting:
+https://www.kaggle.com/tobycrabtree/nfl-scores-and-betting-data?select=spreadspoke_scores.csv
+
+
