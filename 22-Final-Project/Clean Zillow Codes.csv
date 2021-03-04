@@ -1,0 +1,138 @@
+Code,Name
+_AOIP,Age of Inventory (Public)
+_BSICGM,Buyer Seller Index Cross MSA
+_BSICTM,Buyer Seller Index Cross Time MSA
+_DOZM,Days on Zillow MSA
+_DOZP,Days on Zillow (Public)
+_FOR10KM,"Foreclosures Per 10,000 Homes MSA"
+_IMP,Inventory Measure (Public)
+_IMSP,Inventory Measure - SSA (Public)
+_ISA_BT_IMTP,Inventory Measure - Tiers (Public) - Inventory Seasonally Adjusted Bottom Tier
+_ISA_MT_IMTP,Inventory Measure - Tiers (Public) - Inventory Seasonally Adjusted Middle Tier
+_ISA_TT_IMTP,Inventory Measure - Tiers (Public) - Inventory Seasonally Adjusted Top Tier
+_LPCSAL,Listings Price Cuts (SA) All Homes
+_LPCSBT,Listings Price Cuts (SA) Bottom Tier
+_LPCSCO,Listings Price Cuts (SA) Condominiums
+_LPCSMT,Listings Price Cuts (SA) Middle Tier
+_LPCSSF,Listings Price Cuts (SA) Single-Family Residence
+_LPCSTT,Listings Price Cuts (SA) Top Tier
+_MAINSAH,Median Age Of Inventory - NSA - All Homes
+_MDLNSAH,Median Daily Listings - NSA - All Homes
+_MDLSAAH,Median Daily Listings - SA - All Homes
+_MLNSAH,Monthly Listings - NSA - All Homes
+_MLP1B,Median Listing Price - One Bedroom
+_MLP2B,Median Listing Price - Two Bedrooms
+_MLP3B,Median Listing Price - Three Bedrooms
+_MLP4B,Median Listing Price - Four Bedrooms
+_MLP5B,Median Listing Price - Five Or More Bedrooms
+_MLPAH,Median Listing Price - All Homes
+_MLPBT,Median Listing Price - Bottom Tier
+_MLPCC,Median Listing Price - Condo/Co-op
+_MLPDT,Median Listing Price - Duplex/Triplex
+_MLPF1B,Median Listing Price Per Square Foot - One Bedroom
+_MLPF2B,Median Listing Price Per Square Foot - Two Bedrooms
+_MLPF3B,Median Listing Price Per Square Foot - Three Bedrooms
+_MLPF4B,Median Listing Price Per Square Foot - Four Bedrooms
+_MLPF5B,Median Listing Price Per Square Foot - Five Or More Bedrooms
+_MLPFAH,Median Listing Price Per Square Foot - All Homes
+_MLPFBT,Median Listing Price Per Square Foot - Bottom Tier
+_MLPFCC,Median Listing Price Per Square Foot - Condo/Co-op
+_MLPFDT,Median Listing Price Per Square Foot - Duplex/Triplex
+_MLPFMT,Median Listing Price Per Square Foot - Middle Tier
+_MLPFSF,Median Listing Price Per Square Foot - Single-Family Residence
+_MLPFTT,Median Listing Price Per Square Foot - Top Tier
+_MLPMT,Median Listing Price - Middle Tier
+_MLPSF,Median Listing Price - Single-Family Residence
+_MLPTT,Median Listing Price - Top Tier
+_MLSAAH,Monthly Listings - SA - All Homes
+_MLSABT,Monthly Listings - SA - Bottom Tier
+_MLSAMT,Monthly Listings - SA - Middle Tier
+_MLSATT,Monthly Listings - SA - Top Tier
+_MPCDAH,Median Price Cut Dollar - All Homes
+_MPCDCO,Median Price Cut Dollar - Condo
+_MPCDSF,Median Price Cut Dollar - Single-Family Residence
+_MPPRAH,Median Price Of Reduction - All Homes
+_MPPRCO,Median Price Of Reduction - Condo
+_MPPRSF,Median Price Of Reduction - Single-Family Residence
+_MR51B,Median Rental Price - Five Or More Bedrooms
+_MRP1B,Median Rental Price - One Bedroom
+_MRP2B,Median Rental Price - Two Bedrooms
+_MRP3B,Median Rental Price - Three Bedrooms
+_MRP4B,Median Rental Price - Four Bedrooms
+_MRPAH,Median Rental Price - All Homes
+_MRPCC,Median Rental Price - Condo/Co-op
+_MRPDT,Median Rental Price - Duplex/Triplex
+_MRPF1B,Median Rental Price Per Square Foot - One Bedroom
+_MRPF2B,Median Rental Price Per Square Foot - Two Bedrooms
+_MRPF3B,Median Rental Price Per Square Foot - Three Bedrooms
+_MRPF4B,Median Rental Price Per Square Foot - Four Bedrooms
+_MRPF5B,Median Rental Price Per Square Foot - Five Or More Bedrooms
+_MRPFAH,Median Rental Price Per Square Foot - All Homes
+_MRPFCC,Median Rental Price Per Square Foot - Condo/Co-op
+_MRPFDT,Median Rental Price Per Square Foot - Duplex/Triplex
+_MRPFMF,Median Rental Price Per Square Foot - Multi-Family Residence
+_MRPFSF,Median Rental Price Per Square Foot - Single-Family Residence
+_MRPFST,Median Rental Price Per Square Foot - Studio
+_MRPMF,Median Rental Price - Multi-Family Residence
+_MRPSF,Median Rental Price - Single-Family Residence
+_MRPST,Median Rental Price - Studio
+_MSPAH,Median Sold Price - All Homes
+_MSPFAH,Median Sold Price Per Square Foot - All Homes
+_MSPFCO,Median Sold Price Per Square Foot - Condo
+_MSPFSF,Median Sold Price Per Square Foot - Single-Family Residence
+_MTURNM,Monthly Turnover MSA
+_MVALFAH,Median Value Per Square Foot - All Homes
+_NFS,NF Sales
+_NMLNSAH,New Monthly Listings - NSA - All Homes
+_NMLSAAH,New Monthly Listings - SA - All Homes
+_PHDVAH,Percent Of Homes Decreasing In Values - All Homes
+_PHIVAH,Percent Of Homes Increasing In Values - All Homes
+_PLPRAH,Percent Of Listings With Price Reductions - All Homes
+_PLPRBT,Percent Of Listings With Price Reductions - Bottom Tier
+_PLPRCO,Percent Of Listings With Price Reductions - Condo
+_PLPRMT,Percent Of Listings With Price Reductions - Middle Tier
+_PLPRSF,Percent Of Listings With Price Reductions - Single-Family Residence
+_PLPRTT,Percent Of Listings With Price Reductions - Top Tier
+_PRRAH,Price To Rent Ratio - All Homes
+_SCBTM,Sales Counts - Bottom Tier MSA
+_SCM,Sales Counts MSA
+_SCMTM,Sales Counts - MIddle Tier MSA
+_SCSABTM,Sales Counts - SA - Bottom Tier MSA
+_SCSAM,Sales Counts - SA MSA
+_SCSAMTM,Sales Counts - SA - Middle Tier MSA
+_SCSATTM,Sales Counts - SA - Top Tier MSA
+_SCTTM,Sales Counts MSA - Top Tier
+_SPBTM,Sale Prices - Bottom Tier MSA
+_SPFSM,Sales Previously Foreclosed Share MSA
+_SPM,Sales Prices MSA
+_SPMTM,Sales Prices - Middle Tier MSA
+_SPTTM,Sales Prices - Top Tier MSA
+_STLRM,Sale To List Ratio MSA
+_TS_BT_IMTP,Inventory Measure - Tiers (Public) - TierShare Bottom Tier
+_TS_MT_IMTP,Inventory Measure - Tiers (Public) - TierShare Middle Tier
+_TS_TT_IMTP,Inventory Measure - Tiers (Public) - TierShare Top Tier
+_TURNAH,Turnover - All Homes
+_USRAH,Unsold Renos - All Homes
+_VTP,Value Tiers (Public)
+_ZBTY,ZRI - Bottom Tier YOY
+_ZHVI1B,Zillow Home Value Index - One Bedroom
+_ZHVI2B,Zillow Home Value Index - Two Bedrooms
+_ZHVI3B,Zillow Home Value Index - Three Bedrooms
+_ZHVI4B,Zillow Home Value Index - Four Bedrooms
+_ZHVI5B,Zillow Home Value Index - Five Or More Bedrooms
+_ZHVIAH,Zillow Home Value Index - All Homes
+_ZHVIBT,Zillow Home Value Index - Bottom Tier
+_ZHVIBTY,Zillow Home Value Index - Bottom Tier Year-Over-Year
+_ZHVICO,Zillow Home Value Index - Condo
+_ZHVIMT,Zillow Home Value Index - Middle Tier
+_ZHVIMTY,Zillow Home Value Index - Middle Tier - Year-Over-Year
+_ZHVISF,Zillow Home Value Index - Single-Family Residence
+_ZHVITT,Zillow Home Value Index - Top Tier
+_ZHVITTY,Zillow Home Value Index - Top Tier - Year-Over-Year
+_ZMTY,ZRI - Middle Tier YOY
+_ZRIAH,Zillow Rental Index - All Homes
+_ZRIAHMF,Zillow Rental Index - All Homes Plus Multi-Family
+_ZRIFAH,Zillow Rental Index Per Square Foot - All Homes
+_ZRIMFRR,Zillow Rental Index - Multi-Family Residence
+_ZRISFRR,Zillow Rental Index - Single-Family Residence
+_ZTTY,ZRI - Top Tier YOY
