@@ -48,14 +48,14 @@ var avg = sum / movieScores.length;
 
 // Store the length of movie ratings
 var numGoodMovies = goodMovieScores.length;
-var numOKMovies = okMovieScores.length;
+var numOkMovies = okMovieScores.length;
 var numBadMovies = badMovieScores.length;
 
 // Print results
 
 console.log("============");
 console.log(`There are ${numGoodMovies} movies with good ratings.`);
-console.log(`There are ${numOKMovies} movies with OK ratings.}`);
+console.log(`There are ${numOkMovies} movies with OK ratings.}`);
 console.log(`There are ${numBadMovies} movies with bad ratings.`);
 console.log(`The average movie rating is ${avg}.`);
 

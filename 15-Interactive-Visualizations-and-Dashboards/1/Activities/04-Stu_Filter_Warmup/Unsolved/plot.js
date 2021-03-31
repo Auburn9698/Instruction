@@ -46,6 +46,7 @@ var layout = {
     title: "Cities that added more than 15,000 people in 2017",
     xaxis: { title: "City" },
     yaxis: { title: "Population added in 2017"},
+    autosize: true,
   };
 
 // check out 

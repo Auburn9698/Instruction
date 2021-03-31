@@ -2,7 +2,7 @@ var apiKey = "5WrsjnJM1nP_hvTQEoEE";
 
 /* global Plotly */
 var url =
-  `https://www.quandl.com/api/v3/datasets/WIKI/AMZN.json?start_date=2016-10-01&end_date=2017-10-01&api_key=${apiKey}`;
+  `https://www.quandl.com/api/v3/datasets/WIKI/TSLA.json?start_date=2016-10-01&end_date=2017-10-01&api_key=${apiKey}`;
 
 /**
  * Helper function to select stock data
@@ -22,7 +22,7 @@ function unpack(rows, index) {
   });
 }
 
-// Class note: Tome looked at the data with this command:
+// Class note: Tom looked at the data with this command:
 // d3.json(url).then(function(data) {console.log(data)})
 
 function buildPlot() {

@@ -1,5 +1,5 @@
 // The new student and grade to add to the table
-var newGrade = ["Wash", 79];
+var newGrade = ["Tom", 87, "Shelby", 69];
 
 // Use D3 to select the table
 var table = d3.select("table");
@@ -19,3 +19,14 @@ row.append("td").text(newGrade[0]);
 
 // Append one cell for the student grade
 row.append("td").text(newGrade[1]);
+
+var tbody = d3.select("tbody");
+
+// Append one table row `tr` to the table body
+var row = tbody.append("tr");
+
+// Append one cell for the student name
+row.append("td").text(newGrade[2]);
+
+// Append one cell for the student grade
+row.append("td").text(newGrade[3]);

@@ -6,6 +6,18 @@
 // 1. Use the filter method to create a custom filtering function
 //  that returns the cities with a population increase greater than 15,000.
 
+// var top15Cities = [
+//   {
+//     "Rank": 1,
+//     "City": "San Antonio ",
+//     "State": "Texas",
+//     "Increase_from_2016": "24208",
+//     "population": "1511946"
+//   }
+// ....
+// ....   ]
+
+
 function filterCities(city) {
   return parseInt(city.Increase_from_2016) > 15000;
 }
@@ -46,5 +58,7 @@ var layout = {
   yaxis: { title: "2017 Population"}
 };
 
+var config = {responsive: true}
+
 // 8. Plot the chart to a div tag with id "bar-plot"
-Plotly.newPlot("bar-plot", data, layout);
+Plotly.newPlot("bar-plot", data, layout, config);

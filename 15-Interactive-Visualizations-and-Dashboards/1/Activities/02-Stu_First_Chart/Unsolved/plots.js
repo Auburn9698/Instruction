@@ -26,5 +26,7 @@ var layout = {
   yaxis: {title: "Eye Flicker"}
 };
 
+var config = {responsive: true}
+
 // Plot the chart to a div tag with id "bar-plot"
-Plotly.newPlot("bar-plot", data, layout);
+Plotly.newPlot("bar-plot", data, layout, config);

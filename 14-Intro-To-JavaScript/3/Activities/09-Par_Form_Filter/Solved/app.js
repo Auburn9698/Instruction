@@ -45,7 +45,7 @@ function runEnter() {
   // Then, select the unordered list element by class name
   var list = d3.select(".summary");
 
-  // remove any children from the list to
+  // Clear existing data from the summary:
   list.html("");
 
   // append stats to the list

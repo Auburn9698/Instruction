@@ -14,12 +14,12 @@ console.log(data);
 
 // // Step 2:  Use d3 to append one table row `tr` for each weather report object
 // // Don't worry about adding cells or text yet, just try appending the `tr` elements.
-// // data.forEach(function(weatherReport) {
-// //   console.log(weatherReport);
-// //   var row = tbody.append("tr");
-// // });
+// data.forEach(function(weatherReport) {
+//   console.log(weatherReport);
+//   var row = tbody.append("tr");
+// });
 
-// // // Step 3:  Use `Object.entries` to console.log each weather report value
+// // Step 3:  Use `Object.entries` to console.log each weather report value
 // data.forEach(function(weatherReport) {
 //   console.log(weatherReport);
 //   var row = tbody.append("tr");
@@ -29,7 +29,7 @@ console.log(data);
 //   });
 // });
 
-// // // Step 4: Use d3 to append 1 cell per weather report value (weekday, date, high, low)
+// // Step 4: Use d3 to append 1 cell per weather report value (weekday, date, high, low)
 // data.forEach(function(weatherReport) {
 //   console.log(weatherReport);
 //   var row = tbody.append("tr");
@@ -42,7 +42,7 @@ console.log(data);
 //   });
 // });
 
-// // // Step 5: Use d3 to update each cell's text with
+// // Step 5: Use d3 to update each cell's text with
 // // weather report values (weekday, date, high, low)
 // data.forEach(function(weatherReport) {
 //   console.log(weatherReport);

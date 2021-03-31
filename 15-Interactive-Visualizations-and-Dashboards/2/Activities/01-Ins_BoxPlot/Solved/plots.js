@@ -13,7 +13,7 @@ var trace1 = {
   y: y0,
   boxpoints: "all",
   type: "box",
-  name: "Trace 1"
+  name: "Blue Trace"
 };
 
 // Create a trace object with the data in `y1`
@@ -21,7 +21,7 @@ var trace2 = {
   y: y1,
   boxpoints: "all",
   type: "box",
-  name: "Trace 2"
+  name: "Orange Trace"
 };
 
 // Create a data array with the above two traces

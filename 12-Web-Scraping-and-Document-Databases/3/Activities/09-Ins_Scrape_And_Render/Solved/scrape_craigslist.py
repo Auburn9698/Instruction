@@ -1,17 +1,18 @@
 from bs4 import BeautifulSoup
+from splinter import Browser
 # Added in class working to fix problem with Cory:
-# from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.chrome import ChromeDriverManager
 
 def init_browser():
     # @NOTE: Replace the path with your actual path to the chromedriver
     executable_path = {"executable_path": "C:/chromedriver.exe"}
     # Part II of fixing Cory's problem, they changed the above line to this:
-    # executable_path = {"executable_path": ChromeDriverManager().install()}
-    # print(executable_path)
+    executable_path = {"executable_path": ChromeDriverManager().install()}
+    print(executable_path)
     return Browser("chrome", **executable_path, headless=False)
 
 # Part III 
-# init_browser()
+init_browser()
 
 def scrape():
     browser = init_browser()

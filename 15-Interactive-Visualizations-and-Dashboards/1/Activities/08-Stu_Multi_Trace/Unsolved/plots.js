@@ -16,17 +16,18 @@ var trace1 = {
       type: "bar"
   };
 
-  var data = [trace1, trace2];
+  var chart_data = [trace1, trace2];
 
   var config = {responsive: true}
   
 // Apply the group barmode to the layout
 var layout = {
     title: "Greek gods vs Roman gods",
-    barmode: "group"
+    barmode: "stack"
+//  barmode: "group"    
 };
 
 // (In class, Tom changed "group" to "stack" and it made a stacked bar chart.)
 
 // Render the plot to the div tag with id "plot"
-Plotly.newPlot("plot", data, layout, config);
+Plotly.newPlot("plot", chart_data, layout, config);

@@ -8,7 +8,8 @@ app = Flask(__name__)
 dogs = [{"name": "Fido", "type": "Lab"},
         {"name": "Rex", "type": "Collie"},
         {"name": "Suzzy", "type": "Terrier"},
-        {"name": "Tomato", "type": "Retriever"}]
+        {"name": "Tomato", "type": "Retriever"},
+        {"name": "Tucker", "type": "Squirrel Assassin"}]
 
 # @TODO:  Create a route and view function that takes in a dictionary and renders index.html template
 @app.route("/")

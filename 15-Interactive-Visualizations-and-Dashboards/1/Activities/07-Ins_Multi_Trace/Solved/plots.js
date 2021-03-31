@@ -26,7 +26,6 @@ var trace2 = {
 };
 
 // Added in class:  Build a third trace:
-// Create our second trace
 // var trace3 = {
 //   x: [1, 2, 3, 4, 5],
 //   y: randomNumbersBetween0and9(5),
