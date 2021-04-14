@@ -1,8 +1,27 @@
 // Step 1: Set up our chart
-//= ================================
-var svgWidth = 960;
-var svgHeight = 500;
 
+d3.select(window).on("resize", handleResize);
+
+// When the browser loads, loadChart() is called
+loadChart();
+
+function handleResize() {
+  var svgArea = d3.select("svg");
+
+  // If there is already an svg container on the page, remove it and reload the chart
+  if (!svgArea.empty()) {
+    svgArea.remove();
+    loadChart();
+  }
+}
+
+function loadChart() {
+  var svgWidth = window.innerWidth;
+  var svgHeight = window.innerHeight;
+
+//= ================================
+var svgWidth = window.innerWidth;
+var svgHeight = window.innerHeight;
 var margin = {
   top: 20,
   right: 40,
@@ -108,7 +127,23 @@ d3.csv("mojoData.csv").then(function(mojoData) {
 
   // Step 9: Add color coded titles to the x-axis
   // YOUR CODE HERE
+  chartGroup.append("text")
+    // Position the text
+    // Center the text:
+    // (https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/text-anchor)
+    .attr("transform", `translate(${width / 2}, ${height + margin.top + 20})`)
+    .attr("text-anchor", "middle")
+    .attr("font-size", "16px")
+    .attr("fill", "green")
+    .text("Morning Donut Craving Level");
 
+  chartGroup.append("text")
+    .attr("transform", `translate(${width / 2}, ${height + margin.top + 37})`)
+    .attr("text-anchor", "middle")
+    .attr("font-size", "16px")
+    .attr("fill", "orange")
+    .text("Evening Donut Craving Level");
 }).catch(function(error) {
   console.log(error);
 });
+}

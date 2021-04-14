@@ -38,9 +38,9 @@ var xScale = d3.scaleBand()
   .range([0, chartWidth])
   .padding(0.05);
 
-// create axes
-var yAxis = d3.axisLeft(yScale);
-var xAxis = d3.axisBottom(xScale);
+// create axes (labels on the axes)
+var yAxis = d3.axisLeft(yScale);  // Puts labels on the left side of y axis
+var xAxis = d3.axisBottom(xScale);  //Puts labels below the x axis
 
 // set x to the bottom of the chart
 chartGroup.append("g")

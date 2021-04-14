@@ -38,9 +38,10 @@ d3.csv("hours-of-tv-watched.csv").then(function(tvData) {
 
   // Configure a band scale for the horizontal axis with a padding of 0.1 (10%)
   var xBandScale = d3.scaleBand()
-    .domain(tvData.map(d => d.name))  // Mappirng through tvData to createsan array of just the names.
-                                        //Creates an array in place and figures out the length of the array.
-    .range([0, chartWidth])           // This tells you how many pixels you have to divide out. (960 - margins of 30 each = 900)
+    .domain(tvData.map(d => d.name))  // Mapping through tvData to create an array of just the names.
+                                      // Create an array in place and figure out the length of the array.
+    .range([0, chartWidth])           // This tells you how many pixels you have to divide out. 
+                                      // (960 - margins of 30 each = 900)
     .padding(0.1);
 
   // Create a linear scale for the vertical axis.
@@ -68,8 +69,7 @@ d3.csv("hours-of-tv-watched.csv").then(function(tvData) {
   .data(tvData)
   .enter()
   .append("rect")
-  .attr("class", "bar")
-  // the line above is the same as .classed('bar', true)
+  .attr("class", "bar")  // the same as .classed('bar', true)
   .attr("x", d => xBandScale(d.name))
   .attr("y", d => yLinearScale(d.hours))
   .attr("width", xBandScale.bandwidth())

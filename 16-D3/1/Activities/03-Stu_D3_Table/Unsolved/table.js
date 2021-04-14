@@ -26,7 +26,8 @@ var austinWeather = [{
 ];
 // YOUR CODE HERE
 
-d3.select("tbody").selectAll("tr")
+d3.select("tbody")
+  .selectAll("tr")
   .data(austinWeather)
   .enter()
   .append("tr")

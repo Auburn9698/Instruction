@@ -37,6 +37,13 @@ function madeCut(player) {
 // Call the custom function with filter()
 var team = roster.filter(madeCut);
 
+function missedCut(player) {
+  return player.madeTeam == false;
+}
+
+var cutPlayers = roster.filter(missedCut);
+
+
 // Display the results
 console.log(team);
 

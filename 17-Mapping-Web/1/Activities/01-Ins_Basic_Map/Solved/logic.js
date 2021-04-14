@@ -3,8 +3,9 @@
 // This gets inserted into the div with an id of 'map'
 // L sets up a Leaflet object.
 var myMap = L.map("map", {
-  center: [45.52, -122.67],
-  zoom: 13
+  center: [32.60, -85.48],  // New coords for Auburn
+//   center: [45.52, -122.67], Original coords for Portland
+  zoom: 14
 });
 
 // Adding a tile layer (the background map image) to our map

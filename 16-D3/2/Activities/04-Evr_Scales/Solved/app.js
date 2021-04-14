@@ -45,6 +45,11 @@ console.log(`50 returns ${yScale(50)}`);
 console.log(`75 returns ${yScale(75)}`);
 console.log(`95 returns ${yScale(95)}`);
 
+
+
+
+
+
 // Part 3: scaleBand
 // Imagine you want to visualize student grade information on a bar chart.
 var svgHeight = 600;
