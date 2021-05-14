@@ -27,7 +27,7 @@ d3.json(url, function(response) {
       heatArray.push([location.coordinates[1], location.coordinates[0]]);
     }
   }
-
+  console.log(heatArray)
   var heat = L.heatLayer(heatArray, {
     radius: 20,
     blur: 35

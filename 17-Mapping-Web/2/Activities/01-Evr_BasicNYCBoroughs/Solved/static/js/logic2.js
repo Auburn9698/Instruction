@@ -20,8 +20,8 @@ var link = "static/data/nyc.geojson";
 // Our style object
 var mapStyle = {
   color: "white",
-  fillColor: "pink",
-  fillOpacity: 0.5,
+  fillColor: "orange",
+  fillOpacity: 0.4,
   weight: 1.5  //  <-- How thick the drawn lines are
 };
 
